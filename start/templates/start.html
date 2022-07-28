@@ -6,6 +6,17 @@
 
     <input type="text" placeholder="Knowledge Base durchsuchen">
 </section>
+<section class="output-container">
+    {% for knowledge in knowledges %}
+    <div class="output-content">
+        <h1>{{knowledge.title}}</h1>
+        <p>{{knowledge.text}}</p>
+        <span>{{knowledge.autor}}</span>
+    </div>
+
+    {%endfor%}
+
+</section>
 
 
 {%endblock%}
