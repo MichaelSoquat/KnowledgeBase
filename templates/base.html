@@ -13,11 +13,11 @@
 <body>
     <header>
         <nav class="nav-container">
-            <h1>KNOWLEDGE <span>BASE</span></h1>
+            <h1><a href="{% url 'start' %}">KNOWLEDGE <span>BASE</span></a></h1>
             <div class="link-container">
                 <a href="#">Hinzufügen</a> |
-                <a href="#">AGB</a> |
-                <a href="#">Impressum</a>
+                <a href="{% url 'agb' %}">AGB</a> |
+                <a href="{% url 'legal' %}">Impressum</a>
             </div>
 
         </nav>

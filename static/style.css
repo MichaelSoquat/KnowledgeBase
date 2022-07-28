@@ -11,15 +11,44 @@ body {
     padding-right: 8px;
 }
 
-.nav-container>h1>span {
-    color: white;
+.nav-container>h1>a>span {
+    color: white !important;
+}
+
+.nav-container>h1>a {
+    text-decoration: none;
+    color: black;
 }
 
 .link-container>a {
     text-decoration: none;
-    color: rgb(12, 12, 12)
+    color: rgb(12, 12, 12);
 }
 
 .link-container>a:hover {
     text-decoration: underline;
+}
+
+.base-container {
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.base-container>h1 {
+    color: white;
+}
+
+.base-container>h3 {
+    color: rgb(12, 12, 12);
+    margin: 0;
+}
+
+.base-container>input {
+    margin-top: 16px;
+    margin-bottom: 40px;
+    width: 300px;
+    border-radius: 10px;
 }
