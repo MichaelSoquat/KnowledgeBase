@@ -3,8 +3,11 @@
     <h1>KNOWLEDGE BASE</h1>
     <h3>Durchsuche unsere großartige</h3>
     <h3>Datenbank mit Fachwissen</h3>
+    <form method='POST' action="{% url 'start' %}">
+        {% csrf_token %}
+        <input onkeydown="" type="text" name="searchData" placeholder="Knowledge Base durchsuchen">
+    </form>
 
-    <input type="text" placeholder="Knowledge Base durchsuchen">
 </section>
 <section class="output-container">
     {% for knowledge in knowledges %}
